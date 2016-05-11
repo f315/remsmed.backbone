@@ -1,0 +1,54 @@
+<div id="tab_user_med_data" class="prescription profile_tab validationEngineContainer ui-tabs-panel ui-widget-content ui-corner-bottom">
+    <input type="hidden" name="p_user_dt" value="">
+    <input type="hidden" name="p_uid" value="69">
+    <div class="container" data-source="/profile/print_user_med_data_fields/user_id69/read_only0">
+        <ul class="pres_ul">
+            <li>
+                <p>Рост:</p>
+                <input type="text" name="u_med_height" id="u_med_height" class="w100 validate[custom[number]]" maxlength="5" value="">
+                <span>см</span>
+            </li>
+            <li>
+                <p>Вес:</p>
+                <input type="text" name="u_med_weight" id="u_med_weight" class="w100 validate[custom[number],min[],max[]]" maxlength="5" value="80">
+                <span>кг</span>
+            </li>
+            <li>
+                <p>Индекс массы тела:</p>
+                <input id="body_mass_index" type="text" class="w100 " maxlength="5" value="" readonly="readonly">
+            </li>
+            <li>
+                <p>Группа крови:</p>
+                <select name="u_med_blood_group" class=""><option selected="selected">1</option><option>2</option><option>3</option><option>4</option></select>
+            </li>
+            <li>
+                <p>Резус-фактор:</p>
+                <select name="u_med_rh_factor" class=""><option selected="selected" value="0">-</option><option value="1">+</option></select>
+            </li>
+        </ul>
+        <ul class="pres_ul">
+            <li>
+                <p>Инвалидность:</p>
+                <div class="checkbox2" style="background-position: center 0px;">
+                    <input type="checkbox" id="u_med_disability" name="u_med_disability" class="" value="1">
+                </div>
+            </li>
+            <li>
+                <p>Группа инвалидности: <span id="u_med_disability_indicate" class="disab_group_req" style="color:red;display:none;">*</span></p>
+                <select name="u_med_disability_group" id="u_med_disability_group" class="group-disability validate[condRequired[u_med_disability]]" sb="46882781" style="opacity: 0; width: 0px; display: inline-block;"><option selected="selected"></option><option>1</option><option>2</option><option>3</option></select><div id="sbHolder_46882781" class="sbHolder"><a id="sbToggle_46882781" href="#" class="sbToggle"></a><a id="sbSelector_46882781" href="#" class="sbSelector"></a><ul id="sbOptions_46882781" class="sbOptions" style="display: none;"><li><a href="#" rel="" class="sbFocus"></a></li><li><a href="#1" rel="1">1</a></li><li><a href="#2" rel="2">2</a></li><li><a href="#3" rel="3">3</a></li></ul></div>
+            </li>
+            <li>
+                <p>Аллергии:</p>
+                <textarea rows="4" cols="100" id="u_med_allergies" name="u_med_allergies" maxlength="2000"></textarea>
+            </li>
+            <li>
+                <p>Осложнения:</p>
+                <textarea rows="4" cols="100" id="u_med_health_complications" name="u_med_health_complications" maxlength="2000"></textarea>
+            </li>
+            <li>
+                <p>Жалобы:</p>
+                <textarea rows="4" cols="100" id="u_med_complaints" name="u_med_complaints" maxlength="2000"></textarea>
+            </li>
+        </ul>
+    </div>
+</div>

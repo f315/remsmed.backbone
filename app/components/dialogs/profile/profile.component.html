@@ -1,0 +1,54 @@
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all prescriptions_list ui-draggable">
+    <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix">
+        <span id="ui-id-7" class="ui-dialog-title">
+            <h3 class="ui-dialog-title">Мой профиль</h3>
+        </span>
+        <a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button">
+            <span class="ui-icon ui-icon-closethick">close</span>
+        </a>
+    </div>
+    <div id="modal_dlg_box" class="ui-dialog-content ui-widget-content">
+        <div class="tabs profile ui-tabs ui-widget ui-widget-content ui-corner-all">
+            <input type="hidden" name="p_dt" value="05.04.2016">
+            <input type="hidden" name="p_user_id" class="p_user_id" value="69">
+            <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+                <li ui-sref-active="ui-tabs-active ui-state-active" class="tabs_nav ui-state-default ui-corner-top">
+                    <a ui-sref="tab_user_info" class="ui-tabs-anchor" id="ui-id-8">Персональные данные</a>
+                </li>
+                <li ui-sref-active="ui-tabs-active ui-state-active" class="tabs_nav ui-state-default ui-corner-top">
+                    <a ui-sref="tab_med_data" class="ui-tabs-anchor" id="ui-id-9">Медицинские данные</a>
+                </li>
+                <li ui-sref-active="ui-tabs-active ui-state-active" class="tabs_nav ui-state-default ui-corner-top">
+                    <a ui-sref="tab_apps" class="ui-tabs-anchor" id="ui-id-10">Приложения</a>
+                </li>
+                <li ui-sref-active="ui-tabs-active ui-state-active" class="tabs_nav ui-state-default ui-corner-top">
+                    <a ui-sref="tab_notification" class="ui-tabs-anchor" id="ui-id-11">Настройка уведомлений</a>
+                </li>
+                <li ui-sref-active="ui-tabs-active ui-state-active" class="tabs_nav ui-state-default ui-corner-top">
+                    <a ui-sref="tab_change_pass" class="ui-tabs-anchor" id="ui-id-12">Сменить пароль</a>
+                </li>
+            </ul>
+            <ui-view></ui-view>
+            <buttons-options></buttons-options>
+            <!--<div class="options_buttons">
+                <a href="/dyn/profile/profile_action" class="options_save  notautoclose [sendAction:CHANGEPASSWORD]">Сохранить</a>
+                <a href="#" class="options_cancel">Отменить</a>
+            </div>
+            <div class="options_buttons">
+                <a href="/dyn/profile/profile_action" class="options_save notautoclose [sendAction:SAVEUSERMEDDATA]">Сохранить</a>
+                <a href="#" class="options_cancel">Отменить</a>
+            </div>
+            <div style="" class="options_buttons">
+                <a rel=".curator_dialog" href="/dyn/profile/action_notification" class="options_save [sendAction:SAVE]">Сохранить</a>
+                <a href="#" class="options_cancel">Отменить</a>
+            </div>
+            <div class="options_buttons">
+                <div id="div_user_id">
+                    <input type="hidden" name="p_user_id" value="69">
+                </div>
+                <a href="/dyn/profile/profile_action" class="options_save profile_options_save notautoclose [sendAction:SAVEUSERINFO]">Сохранить</a>
+                <a href="#" class="options_cancel">Отменить</a>
+            </div>-->
+        </div>
+    </div>
+</div>

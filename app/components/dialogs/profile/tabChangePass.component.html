@@ -1,0 +1,20 @@
+<div id="tab_change_pass" class="prescription profile_tab validationEngineContainer ui-tabs-panel ui-widget-content ui-corner-bottom">
+    <input type="hidden" name="p_user_dt" value="">
+    <input type="hidden" name="p_uid" value="69">
+    <div class="container" data-source="/profile/print_change_pass_fields/user_id69">
+        <ul class="pres_ul">
+            <li>
+                <p>Старый пароль:</p>
+                <input type="password" maxlength="20" name="p_user_old_password" id="p_user_old_password" class="validate[required]">
+            </li>
+            <li>
+                <p>Новый пароль:</p>
+                <input type="password" maxlength="20" name="p_user_new_password" id="p_user_new_password1" class="validate[required,minSize[8]]">
+            </li>
+            <li>
+                <p>Подтвердите пароль:</p>
+                <input type="password" maxlength="20" name="" id="p_user_new_password2" class="validate[required,equals[p_user_new_password1]] nosending">
+            </li>
+        </ul>
+    </div>
+</div>
